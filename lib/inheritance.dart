@@ -14,7 +14,8 @@ class Vehicle {
 class Car extends Vehicle {
 
   // 부모의 생성자를 그대로 받음
-  Car(String brandName) : super(brandName);
+  //Car(String brandName) : super(brandName);
+  Car(super.brandName);
   
   void honk() {
     print("${super.brandName} 자동차가 빵빵 경적을 울립니다.");
